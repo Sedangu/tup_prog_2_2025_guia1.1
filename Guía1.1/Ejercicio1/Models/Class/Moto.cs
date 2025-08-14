@@ -39,7 +39,7 @@ namespace Ejercicio1.Models.Class
 
         public string VerDescripcion()
         {
-            return $"Marca: {Marca}, Modelo: {Modelo}, Valor de Fabricación: ${ValorFabricacion,10:f2}";
+            return $"Marca: {Marca},   Modelo: {Modelo},   Valor de Fabricación: ${ValorFabricacion,10:f2}";
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using Ejercicio1.Models.Forms;
+﻿using Ejercicio1.Models.Class;
+using Ejercicio1.Models.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,12 +50,27 @@ namespace Ejercicio1
 
         private void Btn_Calcular_Click(object sender, EventArgs e)
         {
+            string marca = Tbx_Marca.Text;
+            int modelo = Convert.ToInt32(NuUpD_Modelo.Value);
+            int añoACalcular = Convert.ToInt32(NuUpD_AnoCalcular.Value);
+            double valorFabrica = Convert.ToDouble(Tbx_ValorFab.Text);
+            int vidaUtil = Convert.ToInt32(Tbx_VidaUtil.Text);
+            double tasaDepreciacion = Convert.ToDouble(Tbx_TasaDep.Text);
+
+            Moto moto = new Moto(marca, modelo, valorFabrica);
+
             FormResultado vResultado = new FormResultado();
 
-            if (vResultado.ShowDialog() == DialogResult.OK)
-            {
-                
-            }
+            vResultado.Lbx_Resultado.Items.Add(moto.VerDescripcion());
+
+            double valorLineal = moto.DepreciacionLineal(añoACalcular, vidaUtil);
+            vResultado.Lbx_Resultado.Items.Add($"Depreciación lineal: ${valorLineal,10:f2}");
+
+            double valorAnual = moto.DepreciacionAnual(añoACalcular, tasaDepreciacion);
+            vResultado.Lbx_Resultado.Items.Add($"Depreciación anual: ${valorAnual,10:f2}");
+
+            vResultado.ShowDialog();
+            
         }
 
         private void Btn_Cerrar_Click(object sender, EventArgs e)

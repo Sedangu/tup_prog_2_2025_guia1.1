@@ -35,12 +35,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Tbx_Marca = new System.Windows.Forms.TextBox();
+            this.NuUpD_Modelo = new System.Windows.Forms.NumericUpDown();
+            this.NuUpD_AnoCalcular = new System.Windows.Forms.NumericUpDown();
+            this.Tbx_ValorFab = new System.Windows.Forms.TextBox();
+            this.Tbx_TasaDep = new System.Windows.Forms.TextBox();
+            this.Tbx_VidaUtil = new System.Windows.Forms.TextBox();
             this.Btn_Calcular = new System.Windows.Forms.Button();
             this.Btn_Cerrar = new System.Windows.Forms.Button();
             this.Pnl_BtnCerrar = new System.Windows.Forms.Panel();
@@ -50,8 +50,8 @@
             this.Pbx_Maximizar = new System.Windows.Forms.PictureBox();
             this.Pbx_Minimizar = new System.Windows.Forms.PictureBox();
             this.Pbx_Cerrar = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NuUpD_Modelo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NuUpD_AnoCalcular)).BeginInit();
             this.Pnl_BtnCerrar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Restaurar)).BeginInit();
@@ -114,63 +114,63 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Vida Útil(años):";
             // 
-            // textBox1
+            // Tbx_Marca
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Blue;
-            this.textBox1.Location = new System.Drawing.Point(222, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 27);
-            this.textBox1.TabIndex = 1;
+            this.Tbx_Marca.ForeColor = System.Drawing.Color.Blue;
+            this.Tbx_Marca.Location = new System.Drawing.Point(222, 66);
+            this.Tbx_Marca.Name = "Tbx_Marca";
+            this.Tbx_Marca.Size = new System.Drawing.Size(100, 27);
+            this.Tbx_Marca.TabIndex = 1;
             // 
-            // numericUpDown1
+            // NuUpD_Modelo
             // 
-            this.numericUpDown1.ForeColor = System.Drawing.Color.Blue;
-            this.numericUpDown1.Location = new System.Drawing.Point(222, 120);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.NuUpD_Modelo.ForeColor = System.Drawing.Color.Blue;
+            this.NuUpD_Modelo.Location = new System.Drawing.Point(222, 120);
+            this.NuUpD_Modelo.Maximum = new decimal(new int[] {
             2500,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 27);
-            this.numericUpDown1.TabIndex = 2;
+            this.NuUpD_Modelo.Name = "NuUpD_Modelo";
+            this.NuUpD_Modelo.Size = new System.Drawing.Size(120, 27);
+            this.NuUpD_Modelo.TabIndex = 2;
             // 
-            // numericUpDown2
+            // NuUpD_AnoCalcular
             // 
-            this.numericUpDown2.ForeColor = System.Drawing.Color.Blue;
-            this.numericUpDown2.Location = new System.Drawing.Point(222, 176);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.NuUpD_AnoCalcular.ForeColor = System.Drawing.Color.Blue;
+            this.NuUpD_AnoCalcular.Location = new System.Drawing.Point(222, 176);
+            this.NuUpD_AnoCalcular.Maximum = new decimal(new int[] {
             2500,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 27);
-            this.numericUpDown2.TabIndex = 3;
+            this.NuUpD_AnoCalcular.Name = "NuUpD_AnoCalcular";
+            this.NuUpD_AnoCalcular.Size = new System.Drawing.Size(120, 27);
+            this.NuUpD_AnoCalcular.TabIndex = 3;
             // 
-            // textBox2
+            // Tbx_ValorFab
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.Blue;
-            this.textBox2.Location = new System.Drawing.Point(222, 236);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 27);
-            this.textBox2.TabIndex = 4;
+            this.Tbx_ValorFab.ForeColor = System.Drawing.Color.Blue;
+            this.Tbx_ValorFab.Location = new System.Drawing.Point(222, 236);
+            this.Tbx_ValorFab.Name = "Tbx_ValorFab";
+            this.Tbx_ValorFab.Size = new System.Drawing.Size(100, 27);
+            this.Tbx_ValorFab.TabIndex = 4;
             // 
-            // textBox3
+            // Tbx_TasaDep
             // 
-            this.textBox3.ForeColor = System.Drawing.Color.Blue;
-            this.textBox3.Location = new System.Drawing.Point(573, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 27);
-            this.textBox3.TabIndex = 5;
+            this.Tbx_TasaDep.ForeColor = System.Drawing.Color.Blue;
+            this.Tbx_TasaDep.Location = new System.Drawing.Point(573, 66);
+            this.Tbx_TasaDep.Name = "Tbx_TasaDep";
+            this.Tbx_TasaDep.Size = new System.Drawing.Size(100, 27);
+            this.Tbx_TasaDep.TabIndex = 5;
             // 
-            // textBox4
+            // Tbx_VidaUtil
             // 
-            this.textBox4.ForeColor = System.Drawing.Color.Blue;
-            this.textBox4.Location = new System.Drawing.Point(573, 119);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 27);
-            this.textBox4.TabIndex = 6;
+            this.Tbx_VidaUtil.ForeColor = System.Drawing.Color.Blue;
+            this.Tbx_VidaUtil.Location = new System.Drawing.Point(573, 119);
+            this.Tbx_VidaUtil.Name = "Tbx_VidaUtil";
+            this.Tbx_VidaUtil.Size = new System.Drawing.Size(100, 27);
+            this.Tbx_VidaUtil.TabIndex = 6;
             // 
             // Btn_Calcular
             // 
@@ -286,12 +286,12 @@
             this.Controls.Add(this.Pnl_BtnCerrar);
             this.Controls.Add(this.Btn_Cerrar);
             this.Controls.Add(this.Btn_Calcular);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Tbx_VidaUtil);
+            this.Controls.Add(this.Tbx_TasaDep);
+            this.Controls.Add(this.Tbx_ValorFab);
+            this.Controls.Add(this.NuUpD_AnoCalcular);
+            this.Controls.Add(this.NuUpD_Modelo);
+            this.Controls.Add(this.Tbx_Marca);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -304,8 +304,8 @@
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tasación de Motos";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NuUpD_Modelo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NuUpD_AnoCalcular)).EndInit();
             this.Pnl_BtnCerrar.ResumeLayout(false);
             this.Pnl_BtnCerrar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -326,12 +326,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Tbx_Marca;
+        private System.Windows.Forms.NumericUpDown NuUpD_Modelo;
+        private System.Windows.Forms.NumericUpDown NuUpD_AnoCalcular;
+        private System.Windows.Forms.TextBox Tbx_ValorFab;
+        private System.Windows.Forms.TextBox Tbx_TasaDep;
+        private System.Windows.Forms.TextBox Tbx_VidaUtil;
         private System.Windows.Forms.Button Btn_Calcular;
         private System.Windows.Forms.Button Btn_Cerrar;
         private System.Windows.Forms.Panel Pnl_BtnCerrar;
